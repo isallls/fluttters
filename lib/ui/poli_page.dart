@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kuliahs/ui/poli_form.dart';
 import '../model/poli.dart';
 // import 'poli_detail.dart';
 import 'poli_item.dart';
@@ -16,6 +17,15 @@ class _PoliPageState extends State<PoliPage> {
       appBar: AppBar(
         title: const Text("Data Poli"),
         backgroundColor: const Color.fromARGB(255, 18, 159, 16),
+        actions: [
+          GestureDetector(
+            child: const Icon(Icons.add),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => PoliForm()));
+            },
+          )
+        ],
       ),
       body: ListView(
         children: [
