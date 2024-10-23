@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kuliahs/ui/poli_form.dart';
+import 'package:kuliahs/widget/sidebar.dart';
 import '../model/poli.dart';
 // import 'poli_detail.dart';
 import 'poli_item.dart';
@@ -14,9 +15,11 @@ class _PoliPageState extends State<PoliPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Sidebar(),
       appBar: AppBar(
         title: const Text("Data Poli"),
-        backgroundColor: const Color.fromARGB(255, 18, 159, 16),
+        // backgroundColor: const Color.fromARGB(255, 18, 159, 16),
+        backgroundColor: Colors.cyan,
         actions: [
           GestureDetector(
             child: const Icon(Icons.add),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ui/poli_page.dart';
+import 'package:kuliahs/ui/beranda.dart';
+// import 'ui/poli_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'klinik app',
       debugShowCheckedModeBanner: false,
-      home: PoliPage(),
+      home: Beranda(),
     );
   }
 }
